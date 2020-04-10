@@ -10,7 +10,7 @@ From: continuumio/miniconda3
 %post
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
     echo "source activate mgefinder" > ~/.bashrc
-    git clone -b dev https://github.com/bhattlab/MGEfinder.git
+    git clone https://github.com/bhattlab/MGEfinder.git
     /opt/conda/bin/conda env create -f MGEfinder/env/conda_linux64.yaml
     rm -rf MGEfinder
 
